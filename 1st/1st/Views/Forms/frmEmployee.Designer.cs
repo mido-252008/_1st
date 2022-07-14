@@ -1,6 +1,6 @@
 ﻿namespace _1st.Views.Forms
 {
-    partial class frmExpenses
+    partial class frmEmployee
     {
         /// <summary>
         /// Required designer variable.
@@ -37,43 +37,51 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.textNote = new DevExpress.XtraEditors.TextEdit();
-            this.comboEmpName = new System.Windows.Forms.ComboBox();
-            this.comboExpGroup = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.ExDate = new System.Windows.Forms.DateTimePicker();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.separatorControl2 = new DevExpress.XtraEditors.SeparatorControl();
+            this.lblState = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtRegTime = new DevExpress.XtraEditors.TextEdit();
             this.label11 = new System.Windows.Forms.Label();
             this.txtRegDate = new DevExpress.XtraEditors.TextEdit();
             this.label10 = new System.Windows.Forms.Label();
             this.txtRegUser = new DevExpress.XtraEditors.TextEdit();
             this.label9 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.DGV = new System.Windows.Forms.DataGridView();
-            this.separatorControl2 = new DevExpress.XtraEditors.SeparatorControl();
-            this.lblState = new System.Windows.Forms.Label();
+            this.txtNotes = new DevExpress.XtraEditors.TextEdit();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtAmount = new DevExpress.XtraEditors.TextEdit();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtُEmpName = new DevExpress.XtraEditors.TextEdit();
+            this.txtAddress = new DevExpress.XtraEditors.TextEdit();
+            this.txtPhone = new DevExpress.XtraEditors.TextEdit();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtSallary = new DevExpress.XtraEditors.TextEdit();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+            this.txtAttendDate = new System.Windows.Forms.DateTimePicker();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtNationalID = new DevExpress.XtraEditors.TextEdit();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.DGV = new System.Windows.Forms.DataGridView();
             this.HeaderPanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textNote.Properties)).BeginInit();
-            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl2)).BeginInit();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtRegTime.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtRegDate.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtRegUser.Properties)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DGV)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAmount.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNotes.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtُEmpName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAddress.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPhone.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSallary.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNationalID.Properties)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV)).BeginInit();
             this.SuspendLayout();
             // 
             // HeaderPanel
@@ -92,11 +100,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Droid Sans Arabic", 9.75F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(772, 8);
+            this.label1.Location = new System.Drawing.Point(746, 8);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 18);
+            this.label1.Size = new System.Drawing.Size(99, 18);
             this.label1.TabIndex = 3;
-            this.label1.Text = "المصروفات";
+            this.label1.Text = "بطاقة الموظفين";
             // 
             // btnClose
             // 
@@ -129,7 +137,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.Controls.Add(this.FooterPanel, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 854);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 789);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -141,11 +149,11 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Droid Sans Arabic", 14.25F);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(639, 6);
+            this.label2.Location = new System.Drawing.Point(718, 4);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(169, 27);
+            this.label2.Size = new System.Drawing.Size(90, 27);
             this.label2.TabIndex = 1;
-            this.label2.Text = "اضافة مصروف جديد";
+            this.label2.Text = "الموظفين";
             // 
             // btnDelete
             // 
@@ -179,123 +187,62 @@
             // 
             // panelControl1
             // 
-            this.panelControl1.Controls.Add(this.textNote);
-            this.panelControl1.Controls.Add(this.comboEmpName);
-            this.panelControl1.Controls.Add(this.comboExpGroup);
-            this.panelControl1.Controls.Add(this.label7);
-            this.panelControl1.Controls.Add(this.label6);
-            this.panelControl1.Controls.Add(this.label5);
-            this.panelControl1.Controls.Add(this.label4);
-            this.panelControl1.Controls.Add(this.ExDate);
             this.panelControl1.Controls.Add(this.groupBox2);
-            this.panelControl1.Controls.Add(this.groupBox1);
+            this.panelControl1.Controls.Add(this.label12);
+            this.panelControl1.Controls.Add(this.txtNationalID);
+            this.panelControl1.Controls.Add(this.txtAttendDate);
             this.panelControl1.Controls.Add(this.separatorControl2);
             this.panelControl1.Controls.Add(this.lblState);
+            this.panelControl1.Controls.Add(this.groupBox1);
+            this.panelControl1.Controls.Add(this.txtNotes);
             this.panelControl1.Controls.Add(this.label3);
-            this.panelControl1.Controls.Add(this.txtAmount);
+            this.panelControl1.Controls.Add(this.label8);
+            this.panelControl1.Controls.Add(this.label4);
+            this.panelControl1.Controls.Add(this.txtُEmpName);
+            this.panelControl1.Controls.Add(this.txtAddress);
+            this.panelControl1.Controls.Add(this.txtPhone);
+            this.panelControl1.Controls.Add(this.label7);
+            this.panelControl1.Controls.Add(this.label5);
+            this.panelControl1.Controls.Add(this.label6);
+            this.panelControl1.Controls.Add(this.txtSallary);
             this.panelControl1.Location = new System.Drawing.Point(12, 87);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(845, 761);
+            this.panelControl1.Size = new System.Drawing.Size(845, 696);
             this.panelControl1.TabIndex = 20;
             // 
-            // textNote
+            // separatorControl2
             // 
-            this.textNote.Location = new System.Drawing.Point(30, 268);
-            this.textNote.Name = "textNote";
-            this.textNote.Properties.Appearance.Font = new System.Drawing.Font("Droid Sans Arabic", 9.75F);
-            this.textNote.Properties.Appearance.Options.UseFont = true;
-            this.textNote.Size = new System.Drawing.Size(728, 24);
-            this.textNote.TabIndex = 50;
+            this.separatorControl2.LineOrientation = System.Windows.Forms.Orientation.Vertical;
+            this.separatorControl2.Location = new System.Drawing.Point(783, 28);
+            this.separatorControl2.Name = "separatorControl2";
+            this.separatorControl2.Size = new System.Drawing.Size(20, 260);
+            this.separatorControl2.TabIndex = 21;
             // 
-            // comboEmpName
+            // lblState
             // 
-            this.comboEmpName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboEmpName.Font = new System.Drawing.Font("Droid Sans Arabic", 9.75F);
-            this.comboEmpName.FormattingEnabled = true;
-            this.comboEmpName.Location = new System.Drawing.Point(455, 151);
-            this.comboEmpName.Name = "comboEmpName";
-            this.comboEmpName.Size = new System.Drawing.Size(301, 26);
-            this.comboEmpName.TabIndex = 49;
+            this.lblState.AutoSize = true;
+            this.lblState.Font = new System.Drawing.Font("Droid Sans Arabic", 9.75F);
+            this.lblState.Location = new System.Drawing.Point(66, 13);
+            this.lblState.Name = "lblState";
+            this.lblState.Size = new System.Drawing.Size(33, 18);
+            this.lblState.TabIndex = 20;
+            this.lblState.Text = "جدبد";
             // 
-            // comboExpGroup
+            // groupBox1
             // 
-            this.comboExpGroup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboExpGroup.Font = new System.Drawing.Font("Droid Sans Arabic", 9.75F);
-            this.comboExpGroup.FormattingEnabled = true;
-            this.comboExpGroup.Location = new System.Drawing.Point(457, 92);
-            this.comboExpGroup.Name = "comboExpGroup";
-            this.comboExpGroup.Size = new System.Drawing.Size(301, 26);
-            this.comboExpGroup.TabIndex = 48;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Droid Sans Arabic", 9.75F);
-            this.label7.Location = new System.Drawing.Point(702, 247);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(57, 18);
-            this.label7.TabIndex = 47;
-            this.label7.Text = "ملاحظات";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Droid Sans Arabic", 9.75F);
-            this.label6.Location = new System.Drawing.Point(716, 190);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(43, 18);
-            this.label6.TabIndex = 46;
-            this.label6.Text = "القيمة";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Droid Sans Arabic", 9.75F);
-            this.label5.Location = new System.Drawing.Point(680, 130);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 18);
-            this.label5.TabIndex = 45;
-            this.label5.Text = "أسم الموظف";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Droid Sans Arabic", 9.75F);
-            this.label4.Location = new System.Drawing.Point(680, 71);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 18);
-            this.label4.TabIndex = 44;
-            this.label4.Text = "نوع المصروف";
-            // 
-            // ExDate
-            // 
-            this.ExDate.CalendarForeColor = System.Drawing.Color.Maroon;
-            this.ExDate.Enabled = false;
-            this.ExDate.Font = new System.Drawing.Font("Droid Sans Arabic", 9.75F);
-            this.ExDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.ExDate.Location = new System.Drawing.Point(614, 34);
-            this.ExDate.Name = "ExDate";
-            this.ExDate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.ExDate.RightToLeftLayout = true;
-            this.ExDate.ShowUpDown = true;
-            this.ExDate.Size = new System.Drawing.Size(144, 26);
-            this.ExDate.TabIndex = 35;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.txtRegTime);
-            this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.txtRegDate);
-            this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.txtRegUser);
-            this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Font = new System.Drawing.Font("Droid Sans Arabic", 9.75F);
-            this.groupBox2.Location = new System.Drawing.Point(30, 309);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(779, 100);
-            this.groupBox2.TabIndex = 25;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "بيانات التسجيل";
+            this.groupBox1.Controls.Add(this.txtRegTime);
+            this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Controls.Add(this.txtRegDate);
+            this.groupBox1.Controls.Add(this.label10);
+            this.groupBox1.Controls.Add(this.txtRegUser);
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Font = new System.Drawing.Font("Droid Sans Arabic", 9.75F);
+            this.groupBox1.Location = new System.Drawing.Point(24, 288);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(779, 100);
+            this.groupBox1.TabIndex = 19;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "بيانات التسجيل";
             // 
             // txtRegTime
             // 
@@ -358,70 +305,110 @@
             this.label9.TabIndex = 20;
             this.label9.Text = "القائم بالتسجيل";
             // 
-            // groupBox1
+            // txtNotes
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.DGV);
-            this.groupBox1.Font = new System.Drawing.Font("Droid Sans Arabic", 9.75F);
-            this.groupBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.groupBox1.Location = new System.Drawing.Point(30, 415);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(779, 338);
-            this.groupBox1.TabIndex = 24;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "مصروفات اليوم";
-            // 
-            // DGV
-            // 
-            this.DGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.DGV.BackgroundColor = System.Drawing.Color.White;
-            this.DGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGV.Cursor = System.Windows.Forms.Cursors.SizeWE;
-            this.DGV.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DGV.Location = new System.Drawing.Point(3, 22);
-            this.DGV.MultiSelect = false;
-            this.DGV.Name = "DGV";
-            this.DGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGV.Size = new System.Drawing.Size(773, 313);
-            this.DGV.TabIndex = 22;
-            // 
-            // separatorControl2
-            // 
-            this.separatorControl2.LineOrientation = System.Windows.Forms.Orientation.Vertical;
-            this.separatorControl2.Location = new System.Drawing.Point(783, 18);
-            this.separatorControl2.Name = "separatorControl2";
-            this.separatorControl2.Size = new System.Drawing.Size(20, 293);
-            this.separatorControl2.TabIndex = 21;
-            // 
-            // lblState
-            // 
-            this.lblState.AutoSize = true;
-            this.lblState.Font = new System.Drawing.Font("Droid Sans Arabic", 9.75F);
-            this.lblState.Location = new System.Drawing.Point(66, 13);
-            this.lblState.Name = "lblState";
-            this.lblState.Size = new System.Drawing.Size(33, 18);
-            this.lblState.TabIndex = 20;
-            this.lblState.Text = "جدبد";
+            this.txtNotes.Location = new System.Drawing.Point(66, 249);
+            this.txtNotes.Name = "txtNotes";
+            this.txtNotes.Properties.Appearance.Font = new System.Drawing.Font("Droid Sans Arabic", 9.75F);
+            this.txtNotes.Properties.Appearance.Options.UseFont = true;
+            this.txtNotes.Size = new System.Drawing.Size(695, 24);
+            this.txtNotes.TabIndex = 18;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Droid Sans Arabic", 9.75F);
-            this.label3.Location = new System.Drawing.Point(722, 13);
+            this.label3.Location = new System.Drawing.Point(642, 13);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(39, 18);
+            this.label3.Size = new System.Drawing.Size(122, 18);
             this.label3.TabIndex = 0;
-            this.label3.Text = "التاريخ";
+            this.label3.Text = "أسم الموظف بالكامل";
             // 
-            // txtAmount
+            // label8
             // 
-            this.txtAmount.Location = new System.Drawing.Point(455, 211);
-            this.txtAmount.Name = "txtAmount";
-            this.txtAmount.Properties.Appearance.Font = new System.Drawing.Font("Droid Sans Arabic", 9.75F);
-            this.txtAmount.Properties.Appearance.Options.UseFont = true;
-            this.txtAmount.Size = new System.Drawing.Size(301, 24);
-            this.txtAmount.TabIndex = 8;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Droid Sans Arabic", 9.75F);
+            this.label8.Location = new System.Drawing.Point(640, 228);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(124, 18);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "ملاحظات على العميل";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Droid Sans Arabic", 9.75F);
+            this.label4.Location = new System.Drawing.Point(693, 67);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(71, 18);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "رقم الهاتف";
+            // 
+            // txtُEmpName
+            // 
+            this.txtُEmpName.Location = new System.Drawing.Point(460, 33);
+            this.txtُEmpName.Name = "txtُEmpName";
+            this.txtُEmpName.Properties.Appearance.Font = new System.Drawing.Font("Droid Sans Arabic", 9.75F);
+            this.txtُEmpName.Properties.Appearance.Options.UseFont = true;
+            this.txtُEmpName.Size = new System.Drawing.Size(301, 24);
+            this.txtُEmpName.TabIndex = 8;
+            // 
+            // txtAddress
+            // 
+            this.txtAddress.Location = new System.Drawing.Point(66, 195);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Properties.Appearance.Font = new System.Drawing.Font("Droid Sans Arabic", 9.75F);
+            this.txtAddress.Properties.Appearance.Options.UseFont = true;
+            this.txtAddress.Size = new System.Drawing.Size(695, 24);
+            this.txtAddress.TabIndex = 15;
+            // 
+            // txtPhone
+            // 
+            this.txtPhone.Location = new System.Drawing.Point(460, 87);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Properties.Appearance.Font = new System.Drawing.Font("Droid Sans Arabic", 9.75F);
+            this.txtPhone.Properties.Appearance.Options.UseFont = true;
+            this.txtPhone.Size = new System.Drawing.Size(301, 24);
+            this.txtPhone.TabIndex = 9;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Droid Sans Arabic", 9.75F);
+            this.label7.Location = new System.Drawing.Point(678, 175);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(86, 18);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "عنوان الموظف";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Droid Sans Arabic", 9.75F);
+            this.label5.Location = new System.Drawing.Point(274, 65);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(96, 18);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "تاريخ بداية العمل";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Droid Sans Arabic", 9.75F);
+            this.label6.Location = new System.Drawing.Point(722, 121);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(42, 18);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "المرتب";
+            // 
+            // txtSallary
+            // 
+            this.txtSallary.Location = new System.Drawing.Point(460, 141);
+            this.txtSallary.Name = "txtSallary";
+            this.txtSallary.Properties.Appearance.Font = new System.Drawing.Font("Droid Sans Arabic", 9.75F);
+            this.txtSallary.Properties.Appearance.Options.UseFont = true;
+            this.txtSallary.Size = new System.Drawing.Size(301, 24);
+            this.txtSallary.TabIndex = 11;
             // 
             // panelControl2
             // 
@@ -435,18 +422,79 @@
             this.panelControl2.Size = new System.Drawing.Size(845, 40);
             this.panelControl2.TabIndex = 21;
             // 
-            // frmExpenses
+            // txtAttendDate
+            // 
+            this.txtAttendDate.CalendarForeColor = System.Drawing.Color.Maroon;
+            this.txtAttendDate.Enabled = false;
+            this.txtAttendDate.Font = new System.Drawing.Font("Droid Sans Arabic", 9.75F);
+            this.txtAttendDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtAttendDate.Location = new System.Drawing.Point(223, 85);
+            this.txtAttendDate.Name = "txtAttendDate";
+            this.txtAttendDate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtAttendDate.RightToLeftLayout = true;
+            this.txtAttendDate.ShowUpDown = true;
+            this.txtAttendDate.Size = new System.Drawing.Size(144, 26);
+            this.txtAttendDate.TabIndex = 36;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Droid Sans Arabic", 9.75F);
+            this.label12.Location = new System.Drawing.Point(236, 121);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(134, 18);
+            this.label12.TabIndex = 38;
+            this.label12.Text = "الرقم القومى (إن وجد )";
+            // 
+            // txtNationalID
+            // 
+            this.txtNationalID.Location = new System.Drawing.Point(66, 141);
+            this.txtNationalID.Name = "txtNationalID";
+            this.txtNationalID.Properties.Appearance.Font = new System.Drawing.Font("Droid Sans Arabic", 9.75F);
+            this.txtNationalID.Properties.Appearance.Options.UseFont = true;
+            this.txtNationalID.Size = new System.Drawing.Size(301, 24);
+            this.txtNationalID.TabIndex = 37;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Controls.Add(this.DGV);
+            this.groupBox2.Font = new System.Drawing.Font("Droid Sans Arabic", 9.75F);
+            this.groupBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.groupBox2.Location = new System.Drawing.Point(24, 394);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(779, 296);
+            this.groupBox2.TabIndex = 25;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "كل الموظفين";
+            // 
+            // DGV
+            // 
+            this.DGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DGV.BackgroundColor = System.Drawing.Color.White;
+            this.DGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGV.Cursor = System.Windows.Forms.Cursors.SizeWE;
+            this.DGV.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DGV.Location = new System.Drawing.Point(3, 22);
+            this.DGV.MultiSelect = false;
+            this.DGV.Name = "DGV";
+            this.DGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DGV.Size = new System.Drawing.Size(773, 271);
+            this.DGV.TabIndex = 22;
+            // 
+            // frmEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(867, 864);
+            this.ClientSize = new System.Drawing.Size(867, 799);
             this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.HeaderPanel);
             this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Shadow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmExpenses";
+            this.Name = "frmEmployee";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -457,19 +505,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textNote.Properties)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl2)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtRegTime.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtRegDate.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtRegUser.Properties)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.DGV)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAmount.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNotes.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtُEmpName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAddress.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPhone.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSallary.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             this.panelControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNationalID.Properties)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DGV)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -485,27 +537,31 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnDelete;
         private DevExpress.XtraEditors.PanelControl panelControl1;
-        private System.Windows.Forms.Label label3;
-        private DevExpress.XtraEditors.TextEdit txtAmount;
-        private DevExpress.XtraEditors.PanelControl panelControl2;
-        private DevExpress.XtraEditors.SeparatorControl separatorControl2;
-        private System.Windows.Forms.Label lblState;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView DGV;
-        private System.Windows.Forms.GroupBox groupBox2;
         private DevExpress.XtraEditors.TextEdit txtRegTime;
         private System.Windows.Forms.Label label11;
         private DevExpress.XtraEditors.TextEdit txtRegDate;
         private System.Windows.Forms.Label label10;
         private DevExpress.XtraEditors.TextEdit txtRegUser;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
+        private DevExpress.XtraEditors.TextEdit txtNotes;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker ExDate;
-        private DevExpress.XtraEditors.TextEdit textNote;
-        private System.Windows.Forms.ComboBox comboEmpName;
-        private System.Windows.Forms.ComboBox comboExpGroup;
+        private DevExpress.XtraEditors.TextEdit txtُEmpName;
+        private DevExpress.XtraEditors.TextEdit txtAddress;
+        private DevExpress.XtraEditors.TextEdit txtPhone;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private DevExpress.XtraEditors.TextEdit txtSallary;
+        private DevExpress.XtraEditors.PanelControl panelControl2;
+        private DevExpress.XtraEditors.SeparatorControl separatorControl2;
+        private System.Windows.Forms.Label lblState;
+        private System.Windows.Forms.Label label12;
+        private DevExpress.XtraEditors.TextEdit txtNationalID;
+        private System.Windows.Forms.DateTimePicker txtAttendDate;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.DataGridView DGV;
     }
 }
