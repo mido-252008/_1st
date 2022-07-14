@@ -37,6 +37,9 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.colorPickEdit1 = new DevExpress.XtraEditors.ColorPickEdit();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.colorPickEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,7 +65,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(248, 254);
+            this.button3.Location = new System.Drawing.Point(248, 232);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(167, 55);
             this.button3.TabIndex = 3;
@@ -72,7 +75,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(248, 178);
+            this.button4.Location = new System.Drawing.Point(248, 156);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(167, 55);
             this.button4.TabIndex = 2;
@@ -102,21 +105,23 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(432, 254);
+            this.button7.Location = new System.Drawing.Point(432, 232);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(167, 55);
             this.button7.TabIndex = 7;
-            this.button7.Text = "button7";
+            this.button7.Text = "الموظفين";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(432, 178);
+            this.button8.Location = new System.Drawing.Point(432, 156);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(167, 55);
             this.button8.TabIndex = 6;
-            this.button8.Text = "تصنيفات";
+            this.button8.Text = "مجموعات الأصناف";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // colorPickEdit1
             // 
@@ -132,11 +137,44 @@
             this.colorPickEdit1.TabIndex = 8;
             this.colorPickEdit1.ColorChanged += new System.EventHandler(this.colorPickEdit1_ColorChanged);
             // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(248, 304);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(167, 55);
+            this.button9.TabIndex = 9;
+            this.button9.Text = "المستخدمين";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(432, 304);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(167, 55);
+            this.button10.TabIndex = 10;
+            this.button10.Text = "الأصناف";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(66, 12);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(167, 55);
+            this.button11.TabIndex = 11;
+            this.button11.Text = "تصنيفات العملاء";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button11);
+            this.Controls.Add(this.button10);
+            this.Controls.Add(this.button9);
             this.Controls.Add(this.colorPickEdit1);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button8);
@@ -164,5 +202,8 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private DevExpress.XtraEditors.ColorPickEdit colorPickEdit1;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button11;
     }
 }

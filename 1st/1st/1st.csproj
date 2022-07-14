@@ -55,17 +55,41 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\Appearance\Appearance.cs" />
+    <Compile Include="Views\Forms\frmCustomersGroups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\frmCustomersGroups.Designer.cs">
+      <DependentUpon>frmCustomersGroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\frmItemDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\frmItemDetails.Designer.cs">
+      <DependentUpon>frmItemDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\frmUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\frmUsers.Designer.cs">
+      <DependentUpon>frmUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Forms\frmEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\Forms\frmEmployee.Designer.cs">
       <DependentUpon>frmEmployee.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Forms\frmExpensesGroup - Copy.cs">
+    <Compile Include="Views\Forms\frmItemsGroups.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Forms\frmExpensesGroup - Copy.Designer.cs">
-      <DependentUpon>frmExpensesGroup - Copy.cs</DependentUpon>
+    <Compile Include="Views\Forms\frmItemsGroups.Designer.cs">
+      <DependentUpon>frmItemsGroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\frmExpensesGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\frmExpensesGroup.Designer.cs">
+      <DependentUpon>frmExpensesGroup.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Forms\frmUnitsGroup.cs">
       <SubType>Form</SubType>
@@ -97,6 +121,12 @@
     <Compile Include="Views\Forms\frmCustomerCard.Designer.cs">
       <DependentUpon>frmCustomerCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Forms\ItemsGroupsList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\ItemsGroupsList.Designer.cs">
+      <DependentUpon>ItemsGroupsList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Forms\Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,11 +144,23 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\Forms\frmCustomersGroups.resx">
+      <DependentUpon>frmCustomersGroups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\frmItemDetails.resx">
+      <DependentUpon>frmItemDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\frmUsers.resx">
+      <DependentUpon>frmUsers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Forms\frmEmployee.resx">
       <DependentUpon>frmEmployee.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Forms\frmExpensesGroup - Copy.resx">
-      <DependentUpon>frmExpensesGroup - Copy.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Forms\frmItemsGroups.resx">
+      <DependentUpon>frmItemsGroups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\frmExpensesGroup.resx">
+      <DependentUpon>frmExpensesGroup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Forms\frmUnitsGroup.resx">
       <DependentUpon>frmUnitsGroup.cs</DependentUpon>
@@ -134,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Forms\frmCustomerCard.resx">
       <DependentUpon>frmCustomerCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\ItemsGroupsList.resx">
+      <DependentUpon>ItemsGroupsList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Forms\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
