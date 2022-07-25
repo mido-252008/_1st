@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace _1st.Views.Forms
 {
@@ -9,6 +10,7 @@ namespace _1st.Views.Forms
         {
             InitializeComponent();
             colorPickEdit1.Color = _1st.Properties.Settings.Default.HeaderFooterColor;
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -79,6 +81,48 @@ namespace _1st.Views.Forms
         private void button11_Click(object sender, EventArgs e)
         {
             frmCustomersGroups frm = new frmCustomersGroups();
+            frm.ShowDialog();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            frmInvMove frm = new frmInvMove();
+            frm.ShowDialog();
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            frmCustomerInvoices frm = new frmCustomerInvoices();
+            frm.ShowDialog();
+        }
+
+        private void panel1_MouseHover(object sender, EventArgs e)
+        {
+            panelAll.Size = new Size(72, 150);
+        }
+
+        
+
+        private void panel1_MouseLeave(object sender, EventArgs e)
+        {
+            panelAll.Size = new Size(0, 150);
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            frmAllCustomers frm = new frmAllCustomers();
+            frm.ShowDialog();
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            frmAllSuppliers frm = new frmAllSuppliers();
+            frm.ShowDialog();
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            frmAllExpenses frm = new frmAllExpenses();
             frm.ShowDialog();
         }
     }

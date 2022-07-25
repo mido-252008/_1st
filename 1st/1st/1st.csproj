@@ -55,11 +55,35 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\Appearance\Appearance.cs" />
+    <Compile Include="Views\Forms\frmAllExpenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\frmAllExpenses.Designer.cs">
+      <DependentUpon>frmAllExpenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\frmAllSuppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\frmAllSuppliers.Designer.cs">
+      <DependentUpon>frmAllSuppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\frmAllCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\frmAllCustomers.Designer.cs">
+      <DependentUpon>frmAllCustomers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Forms\frmCustomersGroups.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\Forms\frmCustomersGroups.Designer.cs">
       <DependentUpon>frmCustomersGroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\frmCustomerInvoices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\frmCustomerInvoices.Designer.cs">
+      <DependentUpon>frmCustomerInvoices.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Forms\frmItemDetails.cs">
       <SubType>Form</SubType>
@@ -109,6 +133,12 @@
     <Compile Include="Views\Forms\frmSupplierCard.Designer.cs">
       <DependentUpon>frmSupplierCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Forms\frmInvMove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\frmInvMove.Designer.cs">
+      <DependentUpon>frmInvMove.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Forms\frmWareHouses.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,12 +150,6 @@
     </Compile>
     <Compile Include="Views\Forms\frmCustomerCard.Designer.cs">
       <DependentUpon>frmCustomerCard.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Forms\ItemsGroupsList.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Views\Forms\ItemsGroupsList.Designer.cs">
-      <DependentUpon>ItemsGroupsList.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Forms\Menu.cs">
       <SubType>Form</SubType>
@@ -144,8 +168,20 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\Forms\frmAllExpenses.resx">
+      <DependentUpon>frmAllExpenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\frmAllSuppliers.resx">
+      <DependentUpon>frmAllSuppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\frmAllCustomers.resx">
+      <DependentUpon>frmAllCustomers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Forms\frmCustomersGroups.resx">
       <DependentUpon>frmCustomersGroups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\frmCustomerInvoices.resx">
+      <DependentUpon>frmCustomerInvoices.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Forms\frmItemDetails.resx">
       <DependentUpon>frmItemDetails.cs</DependentUpon>
@@ -171,14 +207,14 @@
     <EmbeddedResource Include="Views\Forms\frmSupplierCard.resx">
       <DependentUpon>frmSupplierCard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\frmInvMove.resx">
+      <DependentUpon>frmInvMove.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Forms\frmWareHouses.resx">
       <DependentUpon>frmWareHouses.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Forms\frmCustomerCard.resx">
       <DependentUpon>frmCustomerCard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\Forms\ItemsGroupsList.resx">
-      <DependentUpon>ItemsGroupsList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Forms\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
