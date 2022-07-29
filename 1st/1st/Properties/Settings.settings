@@ -18,7 +18,7 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="HeaderFooterColor" Type="System.Drawing.Color" Scope="User">
-      <Value Profile="(Default)">12, 196, 46</Value>
+      <Value Profile="(Default)">Tomato</Value>
     </Setting>
   </Settings>
 </SettingsFile>

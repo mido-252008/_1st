@@ -96,18 +96,6 @@ namespace _1st.Views.Forms
             frm.ShowDialog();
         }
 
-        private void panel1_MouseHover(object sender, EventArgs e)
-        {
-            panelAll.Size = new Size(72, 150);
-        }
-
-        
-
-        private void panel1_MouseLeave(object sender, EventArgs e)
-        {
-            panelAll.Size = new Size(0, 150);
-        }
-
         private void button15_Click(object sender, EventArgs e)
         {
             frmAllCustomers frm = new frmAllCustomers();
@@ -123,6 +111,18 @@ namespace _1st.Views.Forms
         private void button16_Click(object sender, EventArgs e)
         {
             frmAllExpenses frm = new frmAllExpenses();
+            frm.ShowDialog();
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            frmAllItems frm = new frmAllItems();
+            frm.ShowDialog();
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            frmSupplierInvoices frm = new frmSupplierInvoices();
             frm.ShowDialog();
         }
     }

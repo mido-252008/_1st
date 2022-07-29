@@ -85,7 +85,7 @@ namespace _1st.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("12, 196, 46")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Tomato")]
         public global::System.Drawing.Color HeaderFooterColor {
             get {
                 return ((global::System.Drawing.Color)(this["HeaderFooterColor"]));

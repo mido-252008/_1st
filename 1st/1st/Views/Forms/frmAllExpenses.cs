@@ -11,9 +11,9 @@ using DevExpress.XtraEditors;
 
 namespace _1st.Views.Forms
 {
-    public partial class frmAllCustomers : DevExpress.XtraEditors.XtraForm
+    public partial class frmAllExpenses : DevExpress.XtraEditors.XtraForm
     {
-        public frmAllCustomers()
+        public frmAllExpenses()
         {
             InitializeComponent();
             _1st.Views.Appearance.Appearance.HeaderFooterColor(HeaderPanel, FooterPanel, btnClose);

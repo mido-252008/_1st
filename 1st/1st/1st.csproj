@@ -37,7 +37,9 @@
     <Reference Include="DevExpress.Data.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Printing.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -55,6 +57,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\Appearance\Appearance.cs" />
+    <Compile Include="Views\Forms\frmAllItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\frmAllItems.Designer.cs">
+      <DependentUpon>frmAllItems.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Forms\frmAllExpenses.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +80,12 @@
     </Compile>
     <Compile Include="Views\Forms\frmAllCustomers.Designer.cs">
       <DependentUpon>frmAllCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\frmSupplierInvoices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\frmSupplierInvoices.Designer.cs">
+      <DependentUpon>frmSupplierInvoices.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Forms\frmCustomersGroups.cs">
       <SubType>Form</SubType>
@@ -168,6 +182,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\Forms\frmAllItems.resx">
+      <DependentUpon>frmAllItems.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Forms\frmAllExpenses.resx">
       <DependentUpon>frmAllExpenses.cs</DependentUpon>
     </EmbeddedResource>
@@ -176,6 +193,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Forms\frmAllCustomers.resx">
       <DependentUpon>frmAllCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\frmSupplierInvoices.resx">
+      <DependentUpon>frmSupplierInvoices.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Forms\frmCustomersGroups.resx">
       <DependentUpon>frmCustomersGroups.cs</DependentUpon>
